@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Dog Data Table</title>
+
+		<link rel="stylesheet" href="css/main.css">
+
+		<link href="https://fonts.googleapis.com/css?family=Chewy" rel="stylesheet">
+
+	</head>
+	<body>
+
+		<div id="checkbox_div">
+			<p>Show/Hide Columns</p>
+			<li><input type="checkbox" value="hide" id="name_col" onchange="hide_show_table(this.id);">Name</li>
+			<li><input type="checkbox" value="hide" id="breed_col" onchange="hide_show_table(this.id);">Breed</li>
+			<li><input type="checkbox" value="hide" id="age_col" onchange="hide_show_table(this.id);">Age</li>
+			<li><input type="checkbox" value="hide" id="sex_col" onchange="hide_show_table(this.id);">Sex</li>
+			<li><input type="checkbox" value="hide" id="fixed_col" onchange="hide_show_table(this.id);">Fixed</li>
+		</div>
+
+		<input id="myInput" onkeyup="myFunction()" type="text" placeholder="Search">
+
+		<table id="myTable">
+			<tr class="header">
+				<th id="name_col_head" onclick="sortTable(0)">Name</th>
+				<th id="breed_col_head" onclick="sortTable(1)">Breed</th>
+				<th id="age_col_head" onclick="sortTable(2)">Age</th>
+				<th id="sex_col_head" onclick="sortTable(3)">Sex</th>
+				<th id="fixed_col_head" onclick="sortTable(4)">Fixed</th>
+			</tr>
+			<tr class="item">
+				<td class="name_col">Andie</td>
+				<td class="breed_col">Border Collie</td>
+				<td class="age_col">4</td>
+				<td class="sex_col">Female</td>
+				<td class="fixed_col">True</td>
+			</tr>
+			<tr class="item">
+				<td class="name_col">Brody</td>
+				<td class="breed_col">Golden Retriever</td>
+				<td class="age_col">8</td>
+				<td class="sex_col">Male</td>
+				<td class="fixed_col">True</td>
+			</tr>
+			<tr class="item">
+				<td class="name_col">Cookie</td>
+				<td class="breed_col">Boston Terrier</td>
+				<td class="age_col">4</td>
+				<td class="sex_col">Female</td>
+				<td class="fixed_col">false</td>
+			</tr>
+			<tr class="item">
+				<td class="name_col">Duke</td>
+				<td class="breed_col">Bloodhound</td>
+				<td class="age_col">2</td>
+				<td class="sex_col">Male</td>
+				<td class="fixed_col">True</td>
+			</tr>
+			<tr class="item">
+				<td class="name_col">Fifi</td>
+				<td class="breed_col">Poodle</td>
+				<td class="age_col">12</td>
+				<td class="sex_col">Female</td>
+				<td class="fixed_col">True</td>
+			</tr>
+			<tr class="item">
+				<td class="name_col">Gunther</td>
+				<td class="breed_col">Chihuahua</td>
+				<td class="age_col">1</td>
+				<td class="sex_col">Male</td>
+				<td class="fixed_col">False</td>
+			</tr>
+			<tr class="item">
+				<td class="name_col">Lexi</td>
+				<td class="breed_col">Weimaraner</td>
+				<td class="age_col">9</td>
+				<td class="sex_col">Female</td>
+				<td class="fixed_col">True</td>
+			</tr>
+			<tr class="item">
+				<td class="name_col">Maddie</td>
+				<td class="breed_col">Labrador Retriever</td>
+				<td class="age_col">6</td>
+				<td class="sex_col">Female</td>
+				<td class="fixed_col">True</td>
+			</tr>
+			<tr class="item">
+				<td class="name_col">Ranger</td>
+				<td class="breed_col">Coonhound</td>
+				<td class="age_col">3</td>
+				<td class="sex_col">Male</td>
+				<td class="fixed_col">True</td>
+			</tr>
+			<tr class="item">
+				<td class="name_col">Zorro</td>
+				<td class="breed_col">Malmute</td>
+				<td class="age_col">10</td>
+				<td class="sex_col">Male</td>
+				<td class="fixed_col">True</td>
+			</tr>
+		</table>
+
+		<div class="pagination">
+		  <a href="#">&laquo;</a>
+		  <a class="active" href="#">1</a>
+		  <a href="#">2</a>
+		  <a href="#">3</a>
+		  <a href="#">4</a>
+		  <a href="#">5</a>
+		  <a href="#">6</a>
+		  <a href="#">&raquo;</a>
+		</div>
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,81 @@
+* {
+    font-family: 'Chewy', cursive;
+}
+
+#myInput {
+    /*background-image: url('/css/searchicon.png');*/ /* Add a search icon to input */
+    /*background-position: 10px 12px;*/ /* Position the search icon */
+    /*background-repeat: no-repeat;*/ /* Do not repeat the icon image */
+    width: 20%; /* 20%-width */
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 20px 12px 40px; /* Add some padding */
+    border: 1px solid #ddd; /* Add a grey border */
+    margin-bottom: 12px; /* Add some space below the input */
+    float: right; /*Move search box to right side*/
+    display: inline;
+}
+
+#myTable {
+    border-collapse: collapse; /* Collapse borders */
+    width: 100%; /* Full-width */
+    border: 1px solid #ddd; /* Add a grey border */
+    font-size: 18px; /* Increase font-size */
+}
+
+#myTable th, #myTable td {
+    text-align: left; /* Left-align text */
+    padding: 12px; /* Add padding */
+}
+
+#myTable tr {
+    /* Add a bottom border to all table rows */
+    border-bottom: 1px solid #ddd; 
+}
+
+#myTable tr.header, #myTable tr:hover {
+    /* Add a grey background color to the table header and on hover */
+    background-color: #f1f1f1;
+}
+
+.pagination {
+    float: right;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+}
+
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+#checkbox_div p {
+    color: #4CAF50;
+    font-weight:bold;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+#checkbox_div li {
+    color: #4CAF50;
+    display: inline;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 25px;
+    text-align: left;
+}
+
+#checkbox_div input[type="checkbox"] {
+    width:20px;
+    height:20px;
+}
+
+
+
